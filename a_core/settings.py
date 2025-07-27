@@ -130,10 +130,11 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            'hosts': [os.environ.get('redis://red-d22rsu15pdvs7399sf90:6379')],
+            'hosts': ['redis://red-d22rsu15pdvs7399sf90:6379'],
         },
     },
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
