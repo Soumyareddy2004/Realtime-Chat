@@ -8,4 +8,6 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: a_core.settings
       - key: SECRET_KEY
-        value: your-secret-key-here
+        value: django-insecure-rj#-z^kx3j+1ay397otg6j8m_8#v^$^$jys6&41vy^&6le)ezc
+      - key: REDIS_URL
+        value: redis://red-d22rsu15pdvs7399sf90:6379
