@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: realtime-chat
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: daphne a_core.asgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: a_core.settings
+      - key: SECRET_KEY
+        value: your-secret-key-here
